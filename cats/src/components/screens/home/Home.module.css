@@ -1,0 +1,12 @@
+.item {
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px;
+}
