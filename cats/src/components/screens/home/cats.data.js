@@ -2,6 +2,7 @@
 export const cats = [
     {
         id: 'abys',
+        value: 'abyssinian',
         breed: 'Abyssinian',
         description: 'The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals',
         temperament: 'Active, Energetic, Independent, Intelligent, Gentle',
@@ -12,6 +13,7 @@ export const cats = [
     },
     {
         id: 'aege',
+        value: 'аegean',
         breed: 'Aegean',
         description: 'Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.',
         temperament: 'Affectionate, Social, Intelligent, Playful, Active',
@@ -22,6 +24,7 @@ export const cats = [
     },
     {
         id: 'abob',
+        value: 'americanBobtail',
         breed: 'American Bobtail',
         description: 'American Bobtails are loving and incredibly intelligent cats possessing a distinctive wild appearance. They are extremely interactive cats that bond with their human family with great devotion.',
         temperament: 'Intelligent, Interactive, Lively, Playful, Sensitive',
