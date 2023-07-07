@@ -3,7 +3,7 @@ import styles from '../Home.module.css'
 
 const CatItem = ({cat}) => {
     return (
-        <div >
+        <div>
             <div key={cat.id} className={styles.item}>
                 <div 
                     className={styles.image}
