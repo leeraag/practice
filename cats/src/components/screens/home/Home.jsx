@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const Home = () => {
     
-    const [selected, setSelected] = useState('')
+    const [selected, setSelected] = useState(cats[0].value)
 
     const handleChange = (e) => {
         setSelected(e.target.value)
