@@ -13,7 +13,7 @@ const Home = () => {
             setBreeds(response.data)
         })
     }, [])
-    const [selected, setSelected] = useState([breeds[0]])
+    const [selected, setSelected] = useState("default")
     const handleChange = (e) => {
         setSelected(e.target.value)
       }

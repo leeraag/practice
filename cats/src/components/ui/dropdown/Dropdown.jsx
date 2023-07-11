@@ -20,7 +20,7 @@ const Dropdown = ({selected, onChange}) => {
                     <select 
                         className={styles.dropdown} 
                         onChange={onChange}
-                        value="default"
+                        value={selected}
                     >
                         <option disabled value="default">Choose a cat</option>
                         {breedIDs.map(breedID => <option key={breedID.id}>{breedID.name}</option>)}
