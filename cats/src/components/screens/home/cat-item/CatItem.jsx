@@ -1,31 +1,36 @@
 import styles from '../Home.module.css'
 
 
-const CatItem = ({cat}) => {
+const CatItem = ({breed}) => {
     return (
         <div>
-            <div key={cat.id} className={styles.item}>
+            <div key={breed.id} className={styles.item}>
                 <div 
                     className={styles.image}
+                    
                     style={
-                        {backgroundImage: `url(${cat.image})`}
+                        {backgroundImage: `url(${breed.image.url})`}
                     }
                 />
-                <h1>{cat.breed}</h1>
-                <strong>Id: {cat.id}</strong>
-                <p>{cat.description}</p>
+                <h1>{breed.name}</h1>
+                <strong>Id: {breed.id}</strong>
+                <p>{breed.description}</p>
                 <div>
-                    <i>{cat.temperament}</i>
+                    <i>{breed.temperament}</i>
                     <br />
-                    <p>{cat.country}</p>
+                    <p>{breed.origin}</p>
                     <br />
-                    <p>{cat.weight} kgs</p>
+                    <p>{breed.weight.imperial} kgs</p>
                     <br />
-                    <p>{cat.als} avarage life span</p>
+                    <p>{breed.life_span} avarage life span</p>
                     
                     <br />
+                    
                 </div>
-                <a href='#'> Wikipedia </a>
+                <button type="button" className={styles.btn}> 
+                    <a href={breed.wikipedia_url} target="_blank"> Wikipedia </a>
+                </button>
+                
             </div>
            
         </div>
