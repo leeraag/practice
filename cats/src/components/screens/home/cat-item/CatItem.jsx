@@ -1,8 +1,7 @@
 import styles from '../Home.module.css'
 
 
-//const CatItem = ({cat}) => {
-    const CatItem = ({breed}) => {
+const CatItem = ({breed}) => {
     return (
         <div>
             <div key={breed.id} className={styles.item}>
@@ -10,9 +9,9 @@ import styles from '../Home.module.css'
                     className={styles.image}
                     
                     style={
-                        {backgroundImage: `url(${breed.image})`}
+                        {backgroundImage: `url(${breed.image.url})`}
                     }
-                /> {/* url ??? */}
+                />
                 <h1>{breed.name}</h1>
                 <strong>Id: {breed.id}</strong>
                 <p>{breed.description}</p>
@@ -26,8 +25,12 @@ import styles from '../Home.module.css'
                     <p>{breed.life_span} avarage life span</p>
                     
                     <br />
+                    
                 </div>
-                <a href='#'> Wikipedia </a>
+                <button type="button" className={styles.btn}> 
+                    <a href={breed.wikipedia_url} target="_blank"> Wikipedia </a>
+                </button>
+                
             </div>
            
         </div>
