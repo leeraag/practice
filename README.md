@@ -1,2 +1,2 @@
 # practice
-![Screen 1](https://github.com/leeraag/practice/raw/main/practice/practice1.png)
+![Screen 1](https://github.com/leeraag/practice/raw/main/practice1.png)
